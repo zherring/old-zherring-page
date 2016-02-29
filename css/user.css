@@ -2,7 +2,18 @@ h1, h2, h3, h4 {
   font-family: 'Dosis', sans-serif; }
 
 body {
-  background: #FBFBFB; }
+  background: #F7F7F7; }
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #41CE88; }
+
+a:hover {
+  color: #41CE88;
+  text-decoration: none; }
+
+small {
+  color: #AAA; }
 
 header {
   width: 100%;
