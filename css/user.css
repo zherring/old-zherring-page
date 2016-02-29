@@ -30,3 +30,5 @@ header {
     max-width: 90%; }
   #container div {
     flex-grow: 1; }
+  #container #left p, #container #right p {
+    font-size: .95em; }

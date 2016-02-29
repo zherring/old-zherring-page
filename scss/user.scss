@@ -30,5 +30,5 @@ header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
     img { max-width: 90%;}
 
     div { flex-grow: 1;  }
-    #left { }
+    #left p , #right p { font-size: .95em; }
      }
