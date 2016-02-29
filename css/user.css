@@ -22,11 +22,9 @@ header {
 
 #container {
   margin: 2em;
-  padding: 2em;
   align-content: center;
   align-items: center;
-  max-width: 35em;
-  min-width: 24em; }
+  max-width: 35em; }
   #container img {
     max-width: 90%; }
   #container div {
