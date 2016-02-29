@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+    font-family: 'Dosis', sans-serif;
+}
+
+body { background: #FBFBFB; }
+
+header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
+#container {
+//    background: #FFF;
+    margin: 2em;
+    padding: 2em;
+//    display:flex;
+//    flex-direction: row;
+//    box-shadow: 0 .2em .2em rgba(0,0,0,.3);
+    align-content: center;
+    align-items: center;
+    max-width: 50%;
+    min-width: 24em;
+
+    img { max-width: 90%;}
+
+    div { flex-grow: 1;  }
+    #left { }
+     }
