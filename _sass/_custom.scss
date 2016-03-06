@@ -1,4 +1,27 @@
+//Basic Stuff
+
 html, body { height: 100%; width: 100%; }
+
+body { background: #F7F7F7; }
+
+h1, h2, h3, h4 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: #504F4F;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: #41CE88;
+    }
+
+a:hover {
+    color: #41CE88;
+    text-decoration: none;
+    }
+
+small { color: #AAA;}
+header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
 
 #container {
     display: flex;
@@ -16,3 +39,18 @@ html, body { height: 100%; width: 100%; }
     background: #363636;
     width: 100%;
 }
+
+
+// User Bio (Left)
+
+#left {
+    margin: 2em;
+    align-content: center;
+    align-items: center;
+    max-width: 26em;
+
+    img { max-width: 100%;}
+    .cross { text-decoration: line-through; }
+    div { flex-grow: 1;  }
+    #left p  { font-size: .95em; }
+     }

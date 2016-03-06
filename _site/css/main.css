@@ -460,6 +460,30 @@ html, body {
   height: 100%;
   width: 100%; }
 
+body {
+  background: #F7F7F7; }
+
+h1, h2, h3, h4 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #504F4F; }
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #41CE88; }
+
+a:hover {
+  color: #41CE88;
+  text-decoration: none; }
+
+small {
+  color: #AAA; }
+
+header {
+  width: 100%;
+  background: url("../img/bg.jpg");
+  background-size: cover; }
+
 #container {
   display: flex;
   flex-direction: row;
@@ -472,3 +496,17 @@ html, body {
 #right {
   background: #363636;
   width: 100%; }
+
+#left {
+  margin: 2em;
+  align-content: center;
+  align-items: center;
+  max-width: 26em; }
+  #left img {
+    max-width: 100%; }
+  #left .cross {
+    text-decoration: line-through; }
+  #left div {
+    flex-grow: 1; }
+  #left #left p {
+    font-size: .95em; }
