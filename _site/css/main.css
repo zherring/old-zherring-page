@@ -490,9 +490,6 @@ header {
   width: 100%;
   height: 100%; }
 
-#left {
-  max-width: 30vw; }
-
 #right {
   background: #363636;
   width: 100%; }
@@ -501,7 +498,7 @@ header {
   margin: 2em;
   align-content: center;
   align-items: center;
-  max-width: 26em; }
+  max-width: 32em; }
   #left img {
     max-width: 100%; }
   #left .cross {

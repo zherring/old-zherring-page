@@ -30,10 +30,7 @@ header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
     height: 100%;
 }
 
-#left {
-    max-width: 30vw;
 
-    }
 
 #right {
     background: #363636;
@@ -47,7 +44,7 @@ header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
     margin: 2em;
     align-content: center;
     align-items: center;
-    max-width: 26em;
+    max-width: 32em;
 
     img { max-width: 100%;}
     .cross { text-decoration: line-through; }
