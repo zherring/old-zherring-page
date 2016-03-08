@@ -51,3 +51,16 @@ header { width: 100%; background: url('../img/bg.jpg'); background-size: cover;}
     div { flex-grow: 1;  }
     #left p  { font-size: .95em; }
      }
+
+// Post Display
+
+.post-list {
+    display: flex;
+    flex-direction: row;
+
+    > li {
+        flex-grow: 1;
+        width: 30vw;
+        margin: 1em;
+        }
+}

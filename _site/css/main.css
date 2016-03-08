@@ -507,3 +507,11 @@ header {
     flex-grow: 1; }
   #left #left p {
     font-size: .95em; }
+
+.post-list {
+  display: flex;
+  flex-direction: row; }
+  .post-list > li {
+    flex-grow: 1;
+    width: 30vw;
+    margin: 1em; }
