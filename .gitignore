@@ -1,4 +1,5 @@
 config.codekit
 
+.editorconfig
 .sass-cache/
 *.css.map
