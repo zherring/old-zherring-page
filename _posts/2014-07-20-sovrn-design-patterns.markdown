@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "sovrn UI and Design Patterns"
-date:   2014-06-20
+date:   2016-03-02 17:14:08 -0700
 categories: jekyll update
 ---
 

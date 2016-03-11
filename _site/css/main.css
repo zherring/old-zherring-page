@@ -487,12 +487,18 @@ header {
 #container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 #right {
   background: #363636;
   width: 100%; }
+
+.flex-grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: left;
+  margin: 0 auto; }
 
 #left {
   margin: 2em;
@@ -515,3 +521,62 @@ header {
     flex-grow: 1;
     width: 30vw;
     margin: 1em; }
+
+#oldies > article {
+  flex-wrap: nowrap; }
+
+#oldies {
+  perspective: 900px;
+  margin-right: 20px; }
+
+.front {
+  display: flex;
+  align-content: flex-end; }
+
+.card {
+  position: relative;
+  width: 19vw;
+  height: 19vw;
+  margin: 1vw;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d; }
+
+.front, .back {
+  position: absolute;
+  background: #7FC6A4;
+  top: 0;
+  left: 0;
+  width: 19vw;
+  height: 19vw;
+  color: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden; }
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: #FFF solid 4px; }
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; }
+  .back a {
+    color: #FFF; }
+
+.card-container:hover .card {
+  transform: rotateY(180deg); }
+
+.back {
+  transform: rotateY(180deg); }
+
+#medium {
+  width: 63.84vw;
+  margin: 0 auto; }
+
+.sovrn .front {
+  background: url("../assets/posts/sovrn.jpeg") center no-repeat;
+  background-size: cover; }
