@@ -3,3 +3,7 @@ config.codekit
 .editorconfig
 .sass-cache/
 *.css.map
+
+_site/tile.png
+
+_site/tile-wide.png

@@ -3,7 +3,7 @@ h1, h2, h3, h4 {
   color: #504F4F; }
 
 body {
-  background: #F7F7F7; }
+  background: #FAFAFA; }
 
 a, a:visited, a:active {
   text-decoration: none;
@@ -16,21 +16,27 @@ a:hover {
 small {
   color: #AAA; }
 
-header {
-  width: 100%;
-  background: url("../img/bg.jpg");
-  background-size: cover; }
+header, #container {
+  display: flex; }
 
 #container {
   margin: 2em;
   align-content: center;
   align-items: center;
-  max-width: 26em; }
+  display: flex;
+  flex-wrap: row;
+  align-content: space-between;
+  align-items: flex-start; }
   #container img {
     max-width: 90%; }
   #container .cross {
     text-decoration: line-through; }
-  #container div {
-    flex-grow: 1; }
   #container #left p, #container #right p {
-    font-size: .95em; }
+    font-size: .95em;
+    margin: 1em; }
+
+#left {
+  max-width: 26em; }
+
+#right {
+  width: 90%; }
