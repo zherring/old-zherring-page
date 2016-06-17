@@ -5,22 +5,15 @@
 
   <body>
 
-    <!-- {% include header.html %} -->
-    <div id="container">
-        <div id="left">
-        {% include bio.html %}
-        </div>
+    {% include header.html %}
 
-        <div id="right">
-            <div class="page-content">
-              <div class="wrapper">
-                <!-- {{ content }} -->
-              </div>
-              {% include old-studies.html %}
-            </div>
-        </div>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
     </div>
-    <!-- {% include footer.html %} -->
+
+    {% include footer.html %}
 
   </body>
 
