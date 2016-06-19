@@ -1,44 +1,39 @@
 @charset "UTF-8";
 body {
   background: #F3F3F3;
-  font-size: 16px;
+  font-size: 1.5vmax;
   text-align: center; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 700; }
 
-#bio, #social {
+#bio {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  #bio > *, #social > * {
-    display: block; }
+
+#social {
+  margin: .4em; }
+  #social a svg {
+    transform: scale(0.9, 0.9);
+    margin: .1rem;
+    opacity: .9;
+    transition: all .05s ease-in-out; }
+  #social a:hover svg {
+    transform: scale(1, 1);
+    opacity: 1; }
 
 #bio {
   background: #FFF; }
 
-#social ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  list-style: none; }
-  #social ul li {
-    display: block;
-    width: 15rem;
-    height: 15rem; }
-
 #container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 64rem; }
+  flex-wrap: wrap; }
   #container > div, #container article {
     width: 48.5vw;
     height: 48.5vw;
-    max-width: 31rem;
-    max-height: 31rem;
     margin: .5vw;
     padding: 2vw;
     box-sizing: border-box; }
@@ -137,3 +132,8 @@ h1, h2, h3, h4, h5 {
     stroke-dashoffset: 1px; }
   100% {
     stroke-dashoffset: -10000px; } }
+.talk {
+  color: #DA3B32;
+  word-wrap: nowrap; }
+  .talk svg {
+    margin-bottom: -.1em; }
