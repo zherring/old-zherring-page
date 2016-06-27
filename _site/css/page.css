@@ -1,0 +1,19 @@
+#splash {
+  height: 50vh; }
+
+article {
+  align-items: center; }
+
+h1 {
+  font-size: 2.6rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+section > div {
+  height: .2rem;
+  background: #EAEAEA;
+  width: auto; }

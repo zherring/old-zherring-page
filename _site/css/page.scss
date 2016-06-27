@@ -1,0 +1,29 @@
+$light-gray: #EAEAEA;
+
+#splash {
+
+}
+
+article {
+
+}
+
+h1 { font-size: 2.6rem;}
+h2 { font-size: 1.8rem;}
+h3 { font-size: 1.3rem;}
+
+section {
+
+    p {
+    max-width: 38rem;
+    
+    }
+    title {}
+    > div {
+        height:  .2rem;
+        background: $light-gray;
+        width: auto;
+    }
+
+
+}

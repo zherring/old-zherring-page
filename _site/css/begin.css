@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.center {
+  text-align: center; }
+
+.flex {
+  display: flex; }
+
+.f-col {
+  flex-direction: column; }
+
+.f-row {
+  flex-direction: row; }
+
+.spc-arnd {
+  justify-content: space-around; }
+
+.full {
+  width: 100%; }
+
+.narr {
+  max-width: 38rem;
+  width: 100%; }
+
+.wide {
+  width: 100%; }
+
 body {
   background: #F3F3F3;
   font-size: 1.5vmax;
@@ -26,11 +51,14 @@ h1, h2, h3, h4, h5 {
 
 #bio {
   background: #FFF; }
+  #bio aside {
+    font-family: Helvetica Neue, Helvetica, Arial, serif; }
 
 #container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
   #container > div, #container article {
     width: 48.5vw;
     height: 48.5vw;
@@ -39,6 +67,8 @@ h1, h2, h3, h4, h5 {
     box-sizing: border-box; }
   #container > *:nth-child(-n+2) {
     margin-top: 0; }
+  #container article {
+    cursor: pointer; }
 
 .post {
   text-align: left; }
@@ -54,39 +84,38 @@ h1, h2, h3, h4, h5 {
     opacity: 1; }
 
 #me {
-  width: calc(16vw - 9px);
+  width: 16vw;
   height: 16vw;
   display: block;
-  background: url("/img/profilepic.jpg") center center no-repeat;
+  background: url("/img/profilepic2.jpg") center center no-repeat;
   background-size: cover;
   border-radius: 50%;
-  background-position: -2vw;
   padding: 0;
   margin: 0;
-  border: #F3F3F3 9px solid;
   box-sizing: border-box; }
 
-#install, #splash-inst, h2 {
+#install, #splash-inst, p {
   transition: all .1s ease-in-out; }
 
 #install {
   background: #2C95DD;
   overflow: hidden;
   transition: all .2s ease-in-out; }
-  #install h2 {
-    color: #2C95DD; }
+  #install p, #install small {
+    color: #2C95DD;
+    font-weight: 200; }
   #install:hover #splash-inst {
-    margin: -2em 0;
     opacity: 1; }
-  #install:hover h2 {
-    color: #fff; }
+  #install:hover p, #install:hover small {
+    color: #95caee; }
 
 #social {
   background: #FFF; }
 
 #splash-inst {
   width: 65%;
-  opacity: .6; }
+  opacity: .6;
+  margin-bottom: -3em; }
   #splash-inst #splash {
     fill: #fff; }
   #splash-inst #mask, #splash-inst #check, #splash-inst #clock {

@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$light-gray: #EAEAEA;
+
+#splash {
+    height: 50vh;
+}
+
+article {
+    align-items: center;
+
+}
+
+h1 { font-size: 2.6rem;}
+h2 { font-size: 1.8rem;}
+h3 { font-size: 1.3rem;}
+
+section {
+    p {
+
+    }
+    title {}
+    > div {
+        height:  .2rem;
+        background: $light-gray;
+        width: auto;
+    }
+
+
+}
