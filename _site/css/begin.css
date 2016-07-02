@@ -14,15 +14,24 @@
 .spc-arnd {
   justify-content: space-around; }
 
+.ct-cen {
+  justify-content: center; }
+
+.align-c {
+  align-items: center; }
+
 .full {
   width: 100%; }
 
-.narr {
-  max-width: 38rem;
+.nar {
+  max-width: 40rem;
   width: 100%; }
 
 .wide {
   width: 100%; }
+
+.em {
+  font-style: italic; }
 
 body {
   background: #F3F3F3;

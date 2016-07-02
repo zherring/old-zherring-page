@@ -3,13 +3,14 @@
 
   {% include head.html %}
 
-    <body>
-        <article class="post">
-
-            <header id="splash" class="post-header flex f-col spc-arnd">
+    <body class="page">
+        <article class="post {{ page.class }}">
+            <header id="splash" class="post-header flex f-col spc-arnd align-c">
                 <img src="{{ page.splash }}">
-                <h1 class="post-title">{{ page.title }}</h1>
-                <aside> {{ page.aside }}</aside>
+                <div class="center">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <aside> {{ page.aside }}</aside>
+                </div>
             </header>
 
             <div class="post-content">

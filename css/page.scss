@@ -5,9 +5,78 @@
 $light-gray: #EAEAEA;
 
 #splash {
-    height: 50vh;
+    // height: 50vh;
+    padding: 2em 0;
+    > * { margin: .5em;  }
+    img { max-width: 320px; height:auto; }
 }
 
+$pages: (
+    nav-tool: #FFC725,
+    install: #339CE2
+    );
+
+@each $key, $value in $pages {
+    .#{$key} #splash {
+        background: $value;
+
+        h1 {
+            @if( lightness($value) > 50) {
+                color: #FFF;
+                text-shadow: darken($value, 50);
+                aside { color: darken($value, 50);}
+                }
+            @else {
+                color: #FFF;
+                text-shadow: 0 2px 4px darken($value, 10);
+                aside { color: darken($value, 19);}
+                }
+            }
+
+        }
+    }
+
+
+// $icons: star "\2605", lightning "\26A1";
+//
+// @each $icon in $icons {
+//   $key: nth($icon, 1);
+//   $value: nth($icon, 2);
+//
+//   .icon-#{$key} {
+//     @extend .icon;
+//
+//     &:after {
+//       content: $value;
+//     }
+//   }
+
+
+
+
+// .icon {
+//   display: inline;
+//   font: 400 40px/40px Entypo;
+// }
+//
+// $icons: (
+//   star: "\2605",
+//   lightning: "\26A1"
+// );
+//
+// @each $key, $value in $icons {
+//   .icon-#{$key} {
+//     @extend .icon;
+//
+//     &:after {
+//       content: $value;
+//     }
+//   }
+// }
+
+
+
+body.page { font-size: 18px; }
 article {
     align-items: center;
 
