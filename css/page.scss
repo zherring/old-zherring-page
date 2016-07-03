@@ -8,7 +8,9 @@ $light-gray: #EAEAEA;
     // height: 50vh;
     padding: 2em 0;
     > * { margin: .5em;  }
-    img { max-width: 320px; height:auto; }
+    img { max-width: 320px; height:auto; opacity: .98;}
+    h1 { margin-bottom: 0;}
+    aside { font-size: 1rem; }
 }
 
 $pages: (
@@ -19,61 +21,31 @@ $pages: (
 @each $key, $value in $pages {
     .#{$key} #splash {
         background: $value;
+        background-image: linear-gradient(171deg, $value 70%, adjust-hue($value, -14) 130%);
+        img { box-shadow: 0 4px 4px darken($value, 12); }
 
-        h1 {
             @if( lightness($value) > 50) {
+
+                h1 {
                 color: #FFF;
-                text-shadow: darken($value, 50);
-                aside { color: darken($value, 50);}
+                text-shadow: 0 4px 2px darken($value, 10);
+                }
+                aside { color: darken($value, 20); }
                 }
             @else {
-                color: #FFF;
-                text-shadow: 0 2px 4px darken($value, 10);
-                aside { color: darken($value, 19);}
+                h1 {
+                color: darken($value, 50);
+                text-shadow: 0 4px 4px darken($value, 10);
                 }
-            }
-
+                aside { color: lighten($value, 5); }
+                }
         }
     }
 
-
-// $icons: star "\2605", lightning "\26A1";
-//
-// @each $icon in $icons {
-//   $key: nth($icon, 1);
-//   $value: nth($icon, 2);
-//
-//   .icon-#{$key} {
-//     @extend .icon;
-//
-//     &:after {
-//       content: $value;
-//     }
-//   }
-
-
-
-
-// .icon {
-//   display: inline;
-//   font: 400 40px/40px Entypo;
-// }
-//
-// $icons: (
-//   star: "\2605",
-//   lightning: "\26A1"
-// );
-//
-// @each $key, $value in $icons {
-//   .icon-#{$key} {
-//     @extend .icon;
-//
-//     &:after {
-//       content: $value;
-//     }
-//   }
-// }
-
+    //
+    // opacity: 0.2;
+    // background-image: linear-gradient(1deg, #FF5600 0%, rgba(255,109,0,0.00) 64%);
+    //
 
 
 body.page { font-size: 18px; }

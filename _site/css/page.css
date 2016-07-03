@@ -4,23 +4,34 @@
     margin: .5em; }
   #splash img {
     max-width: 320px;
-    height: auto; }
+    height: auto;
+    opacity: .98; }
+  #splash h1 {
+    margin-bottom: 0; }
+  #splash aside {
+    font-size: 1rem; }
 
 .nav-tool #splash {
-  background: #FFC725; }
+  background: #FFC725;
+  background-image: linear-gradient(171deg, #FFC725 70%, #ff9425 130%); }
+  .nav-tool #splash img {
+    box-shadow: 0 4px 4px #e7ac00; }
   .nav-tool #splash h1 {
     color: #FFF;
-    text-shadow: #251b00; }
-    .nav-tool #splash h1 aside {
-      color: #251b00; }
+    text-shadow: 0 4px 2px #f1b300; }
+  .nav-tool #splash aside {
+    color: #be8d00; }
 
 .install #splash {
-  background: #339CE2; }
+  background: #339CE2;
+  background-image: linear-gradient(171deg, #339CE2 70%, #33c5e2 130%); }
+  .install #splash img {
+    box-shadow: 0 4px 4px #1b7cbd; }
   .install #splash h1 {
     color: #FFF;
-    text-shadow: #030d13; }
-    .install #splash h1 aside {
-      color: #030d13; }
+    text-shadow: 0 4px 2px #1c82c6; }
+  .install #splash aside {
+    color: #166599; }
 
 body.page {
   font-size: 18px; }
