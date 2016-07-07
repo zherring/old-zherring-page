@@ -454,3 +454,217 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.center {
+  text-align: center; }
+
+.flex {
+  display: flex; }
+
+.f-col {
+  flex-direction: column; }
+
+.f-row {
+  flex-direction: row; }
+
+.spc-arnd {
+  justify-content: space-around; }
+
+.ct-cen {
+  justify-content: center; }
+
+.align-c {
+  align-items: center; }
+
+.full {
+  width: 100%; }
+
+.nar {
+  max-width: 40rem;
+  width: 100%; }
+
+.wide {
+  width: 100%; }
+
+.em {
+  font-style: italic; }
+
+.display-none {
+  display: none; }
+
+.slab {
+  font-family: "Roboto Slab", Helvetica, Arial; }
+
+.seen {
+  display: inherit; }
+
+.gray {
+  color: #B3B3B3; }
+
+body {
+  background: #F3F3F3;
+  font-size: 1.5vmax;
+  text-align: center; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700; }
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  background: #FFF; }
+  #bio > * {
+    width: 100%; }
+  #bio aside {
+    font-weight: 700;
+    font-size: 2rem; }
+
+#social {
+  margin: .4em; }
+  #social a svg {
+    transform: scale(0.9, 0.9);
+    margin: .1rem;
+    opacity: .9;
+    transition: all .05s ease-in-out; }
+  #social a:hover svg {
+    transform: scale(1, 1);
+    opacity: 1; }
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #container > div, #container article {
+    width: 48.5vw;
+    height: 48.5vw;
+    box-sizing: border-box; }
+  #container > *:nth-child(-n+2) {
+    margin-top: 0; }
+
+.post {
+  text-align: left; }
+  .post h1, .post .post-meta {
+    text-align: center; }
+
+#emc-ui-nav {
+  background: #FFF url("/img/multi-select.gif") center center no-repeat;
+  background-size: 420px 420px;
+  opacity: .8;
+  transition: all .1s ease-in-out; }
+  #emc-ui-nav:hover {
+    opacity: 1; }
+
+#install, #splash-inst, p {
+  transition: all .1s ease-in-out; }
+
+#install {
+  background: #2C95DD;
+  overflow: hidden;
+  transition: all .2s ease-in-out; }
+  #install p, #install small {
+    color: #2C95DD;
+    font-weight: 200; }
+  #install:hover #splash-inst {
+    opacity: 1; }
+  #install:hover p, #install:hover small {
+    color: #95caee; }
+
+#social {
+  background: #FFF; }
+
+@keyframes radiate {
+  0% {
+    stroke-dashoffset: 1px; }
+  100% {
+    stroke-dashoffset: -10000px; } }
+.talk {
+  color: #DA3B32;
+  word-wrap: nowrap; }
+  .talk svg {
+    margin-bottom: -.1em; }
+
+#back-arr {
+  position: fixed;
+  left: 1rem;
+  top: 1rem; }
+
+.splash {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .splash > * {
+    margin: .5em; }
+  .splash img {
+    max-width: 320px;
+    height: auto;
+    opacity: .98; }
+  .splash h1, .splash h2 {
+    margin-bottom: .1rem; }
+  .splash aside {
+    font-size: .95rem; }
+  .splash:hover {
+    text-decoration: none; }
+
+.nav-tool #back-ctr {
+  stroke: #ff9425; }
+.nav-tool .splash {
+  background: #FFC725;
+  background-image: linear-gradient(171deg, #FFC725 70%, #ff9425 130%); }
+  .nav-tool .splash img {
+    box-shadow: 0 4px 4px #e7ac00; }
+  .nav-tool .splash h1, .nav-tool .splash h2 {
+    color: #FFF;
+    text-shadow: 0 4px 2px #f1b300; }
+  .nav-tool .splash aside {
+    color: #be8d00; }
+
+.install #back-ctr {
+  stroke: #33c5e2; }
+.install .splash {
+  background: #339CE2;
+  background-image: linear-gradient(171deg, #339CE2 70%, #33c5e2 130%); }
+  .install .splash img {
+    box-shadow: 0 4px 4px #1b7cbd; }
+  .install .splash h1, .install .splash h2 {
+    color: #FFF;
+    text-shadow: 0 4px 2px #1c82c6; }
+  .install .splash aside {
+    color: #166599; }
+
+body.page {
+  font-size: 18px; }
+
+article {
+  align-items: center; }
+  article p {
+    max-width: 64rem; }
+    article p.wide {
+      width: 100%; }
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .post-content > * {
+    width: 45rem; }
+  .post-content .wide {
+    width: 95%; }
+
+h1 {
+  font-size: 2.6rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+section > div {
+  height: .2rem;
+  background: #EAEAEA;
+  width: auto; }

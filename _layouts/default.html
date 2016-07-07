@@ -8,12 +8,24 @@
     <!-- {% include header.html %} -->
     <div id="container">
 
-        {% include bio.html %}
-        {% include install.html %}
-        {% include emc-ui-nav.html %}
-        <article id="ult-me" style="background: #323232; overflow: hidden; opactiy: .7;">
-            {% include svg/splash-um.svg %}
+        <article id="bio">
+            <aside class="slab gray">Zach has been...</aside>
+            <h1>Fighting For His Right to Party Since 1985.</h1>
+            <p>He's a product designer running, writing and rock climbing in {% include svg/ico-boulder.svg %} Boulder CO.</p>
         </article>
+
+
+        {% for page in site.pages %}
+            <article class="{{ page.class }}">
+                <a href="{{ page.url }}" class="splash">
+                <img src=" {{ page.img }}" />
+                <h2> {{ page.title }} </h2>
+                <aside> {{ page.aside }} </aside>
+                </a>
+            </article>
+        {% endfor %}
+
+
     </div>
     <!-- {% include footer.html %} -->
 

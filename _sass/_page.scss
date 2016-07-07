@@ -1,16 +1,24 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+
 
 $light-gray: #EAEAEA;
+#back-arr {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+}
 
-#splash {
+.splash {
     // height: 50vh;
     padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     > * { margin: .5em;  }
     img { max-width: 320px; height:auto; opacity: .98;}
-    h1 { margin-bottom: 0;}
-    aside { font-size: 1rem; }
+    h1, h2 { margin-bottom: .1rem;}
+    aside { font-size: .95rem; }
+    &:hover { text-decoration: none;}
 }
 
 $pages: (
@@ -19,26 +27,32 @@ $pages: (
     );
 
 @each $key, $value in $pages {
-    .#{$key} #splash {
+
+    .#{$key} {
+
+        #back-ctr { stroke:  adjust-hue($value, -14); }
+
+        .splash {
         background: $value;
         background-image: linear-gradient(171deg, $value 70%, adjust-hue($value, -14) 130%);
         img { box-shadow: 0 4px 4px darken($value, 12); }
 
             @if( lightness($value) > 50) {
 
-                h1 {
+                h1, h2 {
                 color: #FFF;
                 text-shadow: 0 4px 2px darken($value, 10);
                 }
                 aside { color: darken($value, 20); }
                 }
             @else {
-                h1 {
+                h1, h2 {
                 color: darken($value, 50);
                 text-shadow: 0 4px 4px darken($value, 10);
                 }
                 aside { color: lighten($value, 5); }
                 }
+            }
         }
     }
 
@@ -52,7 +66,24 @@ body.page { font-size: 18px; }
 article {
     align-items: center;
 
+
+    p { max-width: 64rem;
+    &.wide { width: 100%; }
+
+    }
+
+
 }
+
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * { width: 45rem; }
+    .wide { width: 95%; }
+    }
 
 h1 { font-size: 2.6rem;}
 h2 { font-size: 1.8rem;}

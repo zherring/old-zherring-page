@@ -1,22 +1,12 @@
 ---
 layout: default
+class: display-none
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-</div>
+{{ for page in site.pages }}
+    <article class=" {{page.class}}">
+        <h2> {{ page.header }} </h2>
+        <aside> {{ page.aside }} </aside>
+    </article>
+{{ endfor }}

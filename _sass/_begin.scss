@@ -1,10 +1,9 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+
 @charset "utf-8";
 
 $red: #DA3B32;
-
+$emc-blue: #2C95DD;
+$gray: #B3B3B3;
 
 /// UTIL
 
@@ -19,6 +18,10 @@ $red: #DA3B32;
 .nar { max-width: 40rem; width: 100%; }
 .wide { width: 100%; }
 .em { font-style: italic;}
+.display-none { display: none;}
+.slab { font-family: "Roboto Slab", Helvetica, Arial; }
+.seen { display: inherit;}
+.gray { color: $gray;}
 
 body {
     background: #F3F3F3;
@@ -31,20 +34,23 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
-#bio, { display: flex; flex-direction: column; align-items: center;
+#bio, {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
 
-}
+    background: #FFF;
+
+    > * { width: 100%; }
+    aside { font-weight: 700; font-size: 2rem; }
+    }
+
 
 #social {
     margin: .4em;
     a svg { transform: scale(.9, .9); margin: .1rem; opacity: .9; transition: all .05s ease-in-out; }
     a:hover svg { transform: scale(1, 1);opacity: 1; }
-    }
-#bio { background: #FFF;
-
-    aside {
-        font-family: Helvetica Neue, Helvetica, Arial, serif;
-        }
     }
 
 #container {
@@ -60,21 +66,15 @@ h1, h2, h3, h4, h5 {
     > div, article {
         width: 48.5vw;
         height: 48.5vw;
-        // max-width: 31rem;
-        // max-height: 31rem;
-        margin: .5vw;
-        //background: white;
-        padding: 2vw;
         box-sizing: border-box;
-    }
+        }
     > *:nth-child(-n+2) { margin-top: 0;}
 
-    article { cursor: pointer;}
 }
 
 .post { text-align: left;
     h1, .post-meta { text-align: center;}
-}
+    }
 
 #emc-ui-nav {
     background: #FFF url("/img/multi-select.gif") center center no-repeat;
@@ -89,20 +89,6 @@ h1, h2, h3, h4, h5 {
 
 }
 
-#me {
-    width: 16vw;
-    height: 16vw;
-    display: block;
-    background: url("/img/profilepic2.jpg") center center no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    // border: #F3F3F3 9px solid;
-    box-sizing: border-box;
-    }
-
-$emc-blue: #2C95DD;
 
 
 #install, #splash-inst, p { transition: all .1s ease-in-out;
@@ -121,52 +107,52 @@ $emc-blue: #2C95DD;
     }
 }
 #social { background: #FFF; }
-
-#splash-inst {
-    width: 65%;
-    opacity: .6;
-    margin-bottom: -3em;
-    #splash { fill: #fff; }
-     #mask, #check, #clock { fill: $emc-blue; }
-     #tile { fill: #EAF4FB; }
-     #shadow, #small-shadow, #big-shadow {fill: url(#active-gradient);}
-     #copy-3 { fill: #EAF4FB; }
-
-      .button span:before {
-         content: "";
-         font-family: FontAwesome;
-         padding-right: .2em;
-         display: inline-block;
-         }
-
-     #Line-group {
-       // animation: turn 60s infinite linear;
-       // transform-origin: center center;
-       }
-     .Line {
-       animation: radiate 400s infinite linear;
-       stroke: #FFF;
-       transform-origin: center center;
-       display:inherit;
-       stroke-width: 2%;
-     }
-
-     #splash { display: none; }
-     #copy-3, #clock, #small-shadow, #big-shadow, #container {
-       transform: translate(0, .5em);
-     }
-
-     #copy-1, #copy-2 { stroke: transparent; }
-     #copy-1 { fill: lighten($emc-blue, 20)}
-     #copy-2 { fill: lighten($emc-blue, 10)}
-     #copy-4 { fill: lighten($emc-blue, 5)}
-     .oval { stroke: #BCD9F2; }
-     .button {
-       background: #fff;
-       color: $emc-blue;
-       border: 0 transparent none;
-     }
-}
+//
+// #splash-inst {
+//     width: 65%;
+//     opacity: .6;
+//     margin-bottom: -3em;
+//     #splash { fill: #fff; }
+//      #mask, #check, #clock { fill: $emc-blue; }
+//      #tile { fill: #EAF4FB; }
+//      #shadow, #small-shadow, #big-shadow {fill: url(#active-gradient);}
+//      #copy-3 { fill: #EAF4FB; }
+//
+//       .button span:before {
+//          content: "";
+//          font-family: FontAwesome;
+//          padding-right: .2em;
+//          display: inline-block;
+//          }
+//
+//      #Line-group {
+//        // animation: turn 60s infinite linear;
+//        // transform-origin: center center;
+//        }
+//      .Line {
+//        animation: radiate 400s infinite linear;
+//        stroke: #FFF;
+//        transform-origin: center center;
+//        display:inherit;
+//        stroke-width: 2%;
+//      }
+//
+//      #splash { display: none; }
+//      #copy-3, #clock, #small-shadow, #big-shadow, #container {
+//        transform: translate(0, .5em);
+//      }
+//
+//      #copy-1, #copy-2 { stroke: transparent; }
+//      #copy-1 { fill: lighten($emc-blue, 20)}
+//      #copy-2 { fill: lighten($emc-blue, 10)}
+//      #copy-4 { fill: lighten($emc-blue, 5)}
+//      .oval { stroke: #BCD9F2; }
+//      .button {
+//        background: #fff;
+//        color: $emc-blue;
+//        border: 0 transparent none;
+//      }
+// }
 
 // @keyframes radiate {
 //     0% {transform: rotate(0deg); }
