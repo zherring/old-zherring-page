@@ -32,7 +32,7 @@ $pages: (
 
         #back-ctr { stroke:  adjust-hue($value, -14); }
 
-        .splash {
+        &.splash, .splash {
         background: $value;
         background-image: linear-gradient(171deg, $value 70%, adjust-hue($value, -14) 130%);
         img { box-shadow: 0 4px 4px darken($value, 12); }
