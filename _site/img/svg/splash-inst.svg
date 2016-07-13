@@ -4,7 +4,7 @@
            <stop stop-color="#EAF4FB" offset="0%"></stop>
            <stop stop-color="#8FC9ED" offset="100%"></stop>
        </linearGradient>
-       <linearGradient id="inactive" x1="80.6376537%" y1="74.1215657%" x2="41.2782257%" y2="15.457556%" id="linearGradient-1">
+       <linearGradient class="inactive" x1="80.6376537%" y1="74.1215657%" x2="41.2782257%" y2="15.457556%" id="linearGradient-1">
            <stop stop-color="#2C95DD" offset="0%"></stop>
            <stop stop-color="#1F83D5" offset="100%"></stop>
        </linearGradient>
