@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Navigation &amp; Tools</title>
-    <meta name="description" content="The portfolio of one Zach Herring.
+    <meta name="description" content="The portfolio of Zach Herring.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/begin.css">
-    <link rel="stylesheet" href="/css/page.css">
+    <!-- <link rel="stylesheet" href="/css/begin.css">
+    <link rel="stylesheet" href="/css/page.css"> -->
     <link rel="canonical" href="http://zachherring.com/nav-and-tools/">
     <link rel="alternate" type="application/rss+xml" title="Zach Herring Product Designer & Front End Developer" href="http://zachherring.com/feed.xml">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto+Slab|Playfair+Display:400i,700i,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto+Slab|Playfair+Display:400i,700i,800i|Source+Serif+Pro:400,600,700|Chivo:400,900|Open+Sans:400,800,800i" rel="stylesheet">
 </head>
 
 
-    <body class="page live nav-tool">
+    <body class="page nav-tool shadow">
         <div id="back-arr">
             <a href="/"><svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Tile-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -41,26 +41,56 @@
             </header>
 
             <div class="post-content">
-            <p>How do you build a flexible navigation while the road map is still being finalized? This is one of the questions UI/UX Services at EMC has been answering over the last 18 months.</p>
+            <h2 id="the-problem">The Problem</h2>
 
-<p class="wide">The deeper into the design process we got, the more a couple of our major nav paradigms started showing their age and breaking under the weight of our demanding new feature-sets.</p>
+<blockquote>
+  <p>”How do you build a flexible navigation while the road map is still being finalized?”</p>
+</blockquote>
+
+<p>This is one of the questions UI/UX Services at EMC has been answering over the last 6 months. We were tasked with designing a bullet-proof information hierarchy and navigational structure for three ongoing applications with radically different feature-sets. In addition to that, the bootstrap these frameworks were being built into were consumed by various other organizations within EMC. How do you make useful toolsets for teams distributed across verticals and geography?</p>
 
 <h2 id="guiding-principles">Guiding Principles</h2>
+<p>Over three meetings, we presented research and reviewed the types of interactions and structures most common to EMC products.</p>
+
+<p><img src="/nav-and-tools/img/raptor-site-guide.png" alt="" /></p>
+
+<p>When research concluded, three unifying principles emerged out of the dialog to guide the following solutions.</p>
+
 <ul>
-  <li>Point 1</li>
-  <li>Point 2</li>
-  <li>Point 3</li>
+  <li>
+    <p><strong>Flexibility</strong> - Because some feature’s complexity approaching that of stand-alone applications in other fields, extendibility became a key focus for our team.</p>
+  </li>
+  <li>
+    <p><strong>Clutter-Free</strong> - The actions and management of complex data flows also necessitated a toolset and navigation that was out of the way when not needed, providing users of all screen sizes (desktop and mobile) a distraction-free workspace.</p>
+  </li>
+  <li>
+    <p><strong>Powerful</strong> - “Power user” is an attribute of two of our three most common Personas, so a smart navigation that provided access to 2nd, 3rd and ancillary data points was also a must-have.</p>
+  </li>
 </ul>
 
-<h2 id="research-and-solutions">Research and Solutions</h2>
-<p>Test, words etc.</p>
+<h2 id="solutions">Solutions</h2>
 
 <h3 id="omni-nav">Omni-Nav</h3>
-<p>Test, words etc.</p>
+<p>We settled on an Omni-Navigational window, build out with each mini-application inside the main pain, as well as system Utilities.</p>
+
+<p>The omni-search at the top works from an index of the entire site; you can access pages 2 or 3 levels deep within that single page, as well as Tags and Events thrown by the Application itself.</p>
+
+<p><strong>Detail Shot</strong> We spent an extra hour and a half adding hotkeys  for opening, searching and traversing the omni-panel. We had a lot of fun adding in these little details for the power user personas.</p>
 
 <h3 id="secondary-nav">Secondary Nav</h3>
+<p>The secondary navigation was actually the last piece of the puzzle we committed to. We iterated through 4 different approaches before we landed the final solution. The prototype below, coded by <a href="codepen.com/jasesmith">Jase Smith</a>was one of the tests we threw against the solution.</p>
 
-<h3 id="omni-tools">Omni-Tools</h3>
+<div class="wide">
+<p data-height="680" data-theme-id="light" data-slug-hash="RraJwJ" data-default-tab="result" data-user="jasesmith" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/jasesmith/pen/RraJwJ/">UI Concept: The Whale</a> by Jase (<a href="http://codepen.io/jasesmith">@jasesmith</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<h3 id="action-bar">Action Bar</h3>
+
+<p>For actions, which could be taken on individual items, components within an item, or on multiple-items at once, we assembled a
+<!-- {: .wide }
+<span>Testing, this is a test, test cool.</span> <span> Testing 2.</span>
+{: .block .wide } --></p>
 
             </div>
 

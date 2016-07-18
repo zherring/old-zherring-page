@@ -3,8 +3,9 @@ layout: page
 title: Install Animation
 project: Install Animation
 aside: Fun with SVGs and animation
-img: img/svg/splash-inst.svg
-class: live install
+img: /img/svg/splash-inst.svg
+class: install
+type: project
 ---
 
 ## Showing up

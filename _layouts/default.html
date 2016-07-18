@@ -6,31 +6,31 @@
   <body>
 
     <!-- {% include header.html %} -->
-    <div id="container">
+    <div id="container" class="grid">
 
-        <article id="bio">
-            <aside class="slab">Zach has been...</aside>
-            <h1>Fighting For His Right to Party Since 1985.</h1>
-            <p>He's a product designer running, writing and rock climbing in {% include svg/ico-boulder.svg %} Boulder CO.</p>
-            <div id="social">
-                <a href="https://www.dribbble.com/zherring">{% include /svg/ico-drb.svg %}</a>
-                <a href="https://www.github.com/zherring">{% include /svg/ico-gh.svg %}</a>
-                <a href="https://www.codepen.com/zherring">{% include /svg/ico-cp.svg %}</a>
-                <a href="mailto:z.herring@gmail.com">{% include /svg/ico-mail.svg %}</a>
-                <a href="https://www.twitter.com/zherring">{% include /svg/ico-twi.svg %}</a>
-                <a href="https://www.instagram.com/zherring">{% include /svg/ico-ig.svg %}</a>
-            </div>
-        </article>
 
 
         {% for page in site.pages %}
-            <a class="{{ page.class }} splash" href="{{ page.url }}">
-                <!-- <a href="{{ page.url }}" class="splash"> -->
-                <img src=" {{ page.img }}" />
-                <h2> {{ page.title }} </h2>
-                <aside> {{ page.aside }} </aside>
-                <!-- </a> -->
-            </a>
+
+            {% if page.type == "hide" %}
+                &nbsp;
+            {% endif %}
+
+            {% if page.type == "front" %}
+                {{page.content}}
+            {% endif %}
+
+
+            {% if page.type == "project" %}
+                <article class="{{ page.class }}">
+                    <a class="splash" href="{{ page.url }}">
+                    <img src=" {{ page.img }}" />
+                    <h2> {{ page.title }} </h2>
+                    <aside> {{ page.aside }} </aside>
+                    </a>
+                </article>
+            {% endif%}
+
         {% endfor %}
 
 

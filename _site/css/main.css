@@ -489,7 +489,7 @@ pre {
 .em {
   font-style: italic; }
 
-.display-none {
+.display-none, .hide {
   display: none; }
 
 .slab {
@@ -503,12 +503,17 @@ pre {
 
 body {
   background: #F3F3F3;
-  font-size: 20px;
-  text-align: center; }
+  font-size: 18px;
+  text-align: center;
+  color: #585858; }
+
+h1 {
+  font-family: "Roboto Slab", san-serif; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700; }
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  color: #353535; }
 
 #bio {
   display: flex;
@@ -519,8 +524,38 @@ h1, h2, h3, h4, h5 {
   font-family: "Roboto Slab";
   color: #6F6F6F;
   align-items: flex-start; }
-  #bio h1 {
-    color: #000; }
+  #bio span {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0 .2ch;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+    #bio span.me {
+      background-image: url("/img/emoji-me.png"); }
+    #bio span.boulder {
+      background-image: url("/img/emoji-boulder.svg");
+      color: FF3D00; }
+    #bio span.sketch {
+      background-image: url("/img/emoji-sketch.svg");
+      color: FF3D00; }
+    #bio span.code {
+      background-image: url("/img/emoji-code.svg");
+      color: FF3D00; }
+  #bio strong.me {
+    color: #FF3d00; }
+  #bio strong.boulder {
+    color: #72CAAA; }
+  #bio strong.sketch {
+    color: #FACF53; }
+  #bio strong.code {
+    color: #9253FA; }
+  #bio p {
+    color: #858585;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-align: center; }
   #bio > * {
     width: 100%; }
   #bio aside {
@@ -552,21 +587,24 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   max-width: 70rem;
   box-sizing: border-box; }
-  #container > div, #container > article, #container > a {
-    width: 49.75vw;
-    height: 49.75vw;
-    max-width: calc(35rem - .25rem );
-    max-height: calc(35rem - .25rem );
-    padding: 2rem;
-    box-sizing: border-box;
-    margin: .25rem .5rem;
-    justify-content: center; }
-    #container > div:nth-child(-n+2), #container > article:nth-child(-n+2), #container > a:nth-child(-n+2) {
+  #container article {
+    margin: .25vw .5vw; }
+    #container article:nth-child(-n+2) {
       margin-top: 0; }
-    #container > div:nth-child(1n+1), #container > article:nth-child(1n+1), #container > a:nth-child(1n+1) {
+    #container article:nth-child(1n+1) {
       margin-left: 0; }
-    #container > div:nth-child(2n+2), #container > article:nth-child(2n+2), #container > a:nth-child(2n+2) {
+    #container article:nth-child(2n+2) {
       margin-right: 0; }
+
+article:first-child, .grid a {
+  width: 49.75vw;
+  height: 49.75vw;
+  max-width: calc(35rem - .25vw );
+  max-height: calc(35rem - .25vw );
+  padding: 1vw;
+  box-sizing: border-box;
+  flex-grow: 1;
+  justify-content: center; }
 
 .post {
   text-align: left; }
@@ -638,54 +676,69 @@ h1, h2, h3, h4, h5 {
 .nav-tool.splash, .nav-tool .splash {
   background: #FFC725;
   background-image: linear-gradient(171deg, #FFC725 70%, #ff9425 130%); }
-  .nav-tool.splash img, .nav-tool .splash img {
-    box-shadow: 0 4px 4px #e7ac00; }
   .nav-tool.splash h1, .nav-tool.splash h2, .nav-tool .splash h1, .nav-tool .splash h2 {
-    color: #FFF;
     text-shadow: 0 4px 2px #f1b300; }
+  .nav-tool.splash h1, .nav-tool.splash h2, .nav-tool .splash h1, .nav-tool .splash h2 {
+    color: #FFF; }
   .nav-tool.splash aside, .nav-tool .splash aside {
     color: #be8d00; }
+.nav-tool.shadow .splash img {
+  box-shadow: 0 4px 4px #e7ac00; }
 
 .install #back-ctr {
   stroke: #33c5e2; }
 .install.splash, .install .splash {
   background: #339CE2;
   background-image: linear-gradient(171deg, #339CE2 70%, #33c5e2 130%); }
-  .install.splash img, .install .splash img {
-    box-shadow: 0 4px 4px #1b7cbd; }
   .install.splash h1, .install.splash h2, .install .splash h1, .install .splash h2 {
-    color: #FFF;
     text-shadow: 0 4px 2px #1c82c6; }
+  .install.splash h1, .install.splash h2, .install .splash h1, .install .splash h2 {
+    color: #FFF; }
   .install.splash aside, .install .splash aside {
     color: #166599; }
+.install.shadow .splash img {
+  box-shadow: 0 4px 4px #1b7cbd; }
 
 body.page {
   font-size: 18px; }
 
 article {
   align-items: center; }
-  article p {
-    max-width: 64rem; }
-    article p.wide {
-      width: 100%; }
 
 .post-content {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  text-align: left; }
   .post-content > * {
-    width: 45rem; }
+    max-width: 40rem;
+    padding: .25rem 2.8rem;
+    display: block;
+    width: 100%; }
   .post-content .wide {
-    width: 95%; }
-
-h1 {
-  font-size: 2.6rem; }
-
-h2 {
-  font-size: 1.8rem; }
-
-h3 {
-  font-size: 1.3rem; }
+    max-width: calc(60rem - 3rem);
+    width: calc(100vw - 3rem); }
+  .post-content img {
+    box-shadow: none; }
+  .post-content h1 {
+    font-size: 2.6rem; }
+  .post-content h2 {
+    font-size: 1.8rem; }
+  .post-content h3 {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center; }
+    .post-content h3::after {
+      content: '';
+      flex: 1;
+      padding: 1px;
+      margin-top: .4ch;
+      margin-left: 1ch;
+      background: currentColor;
+      opacity: .1; }
+  .post-content .block {
+    display: flex;
+    flex-direction: row; }
 
 section > div {
   height: .2rem;
