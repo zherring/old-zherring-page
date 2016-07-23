@@ -501,11 +501,15 @@ pre {
 .gray {
   color: #B3B3B3; }
 
+.center {
+  text-align: center; }
+
 body {
   background: #F3F3F3;
   font-size: 18px;
   text-align: center;
-  color: #585858; }
+  color: #585858;
+  line-height: 1.5em; }
 
 h1 {
   font-family: "Roboto Slab", san-serif; }
@@ -523,7 +527,8 @@ h1, h2, h3, h4, h5 {
   background: #FFF;
   font-family: "Roboto Slab";
   color: #6F6F6F;
-  align-items: flex-start; }
+  align-items: flex-start;
+  line-height: 2.8em; }
   #bio span {
     display: inline-block;
     width: 1.6rem;
@@ -710,7 +715,7 @@ article {
   flex-direction: column;
   align-items: center;
   text-align: left; }
-  .post-content > * {
+  .post-content > *, .post-content .contrain {
     max-width: 40rem;
     padding: .25rem 2.8rem;
     display: block;
@@ -744,3 +749,35 @@ section > div {
   height: .2rem;
   background: #EAEAEA;
   width: auto; }
+
+.stretch {
+  max-width: 100%;
+  padding: 1rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .stretch > div {
+    width: 100%; }
+  .stretch img {
+    width: 95%; }
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .grid > div {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 5vw;
+    box-sizing: border-box; }
+    .grid > div p {
+      font-size: .85em;
+      line-height: 1.5rem; }
+    .grid > div img {
+      max-width: 8rem; }

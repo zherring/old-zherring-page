@@ -30,12 +30,13 @@ $font-body: "Helvetica Neue";
 .slab { font-family: $font-second, Helvetica, Arial; }
 .seen { display: inherit;}
 .gray { color: $gray;}
-
+.center { text-align: center; }
 body {
     background: #F3F3F3;
     font-size: 18px;
     text-align: center;
     color: #585858;
+    line-height: 1.5em;
 }
 
 h1 { font-family: $font-main, san-serif; }
@@ -56,6 +57,7 @@ h1, h2, h3, h4, h5 {
     color: $dark-gray;
 
     align-items: flex-start;
+    line-height: 2.8em;
 
     span {
         display: inline-block;

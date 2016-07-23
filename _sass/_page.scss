@@ -76,7 +76,7 @@ article {
     align-items: center;
     text-align: left;
 
-    > * { max-width: 40rem; padding: .25rem 2.8rem; display: block; width: 100%; }
+    > *, .contrain { max-width: 40rem; padding: .25rem 2.8rem; display: block; width: 100%; }
     .wide { max-width: calc(60rem - 3rem); width: calc(100vw - 3rem); }
     img { box-shadow: none; }
 
@@ -115,4 +115,41 @@ section {
     }
 
 
+}
+
+.stretch {
+    max-width: 100%;
+    // background: #fff;
+    padding: 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    > div { width: 100%;}
+    img { width: 95%;}
+
+
+
+
+    }
+
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    > div {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 5vw;
+    box-sizing: border-box;
+    p { font-size: .85em; line-height: 1.5rem;}
+    img { max-width: 8rem; }
+    }
 }

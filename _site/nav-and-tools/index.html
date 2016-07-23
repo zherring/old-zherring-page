@@ -16,6 +16,8 @@
     <link rel="canonical" href="http://zachherring.com/nav-and-tools/">
     <link rel="alternate" type="application/rss+xml" title="Zach Herring Product Designer & Front End Developer" href="http://zachherring.com/feed.xml">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto+Slab|Playfair+Display:400i,700i,800i|Source+Serif+Pro:400,600,700|Chivo:400,900|Open+Sans:400,800,800i" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
 </head>
 
 
@@ -44,17 +46,13 @@
             <h2 id="the-problem">The Problem</h2>
 
 <blockquote>
-  <p>”How do you build a flexible navigation while the road map is still being finalized?”</p>
+  <p>”How do you build a flexible navigation while the road map could be anything?”</p>
 </blockquote>
 
-<p>This is one of the questions UI/UX Services at EMC has been answering over the last 6 months. We were tasked with designing a bullet-proof information hierarchy and navigational structure for three ongoing applications with radically different feature-sets. In addition to that, the bootstrap these frameworks were being built into were consumed by various other organizations within EMC. How do you make useful toolsets for teams distributed across verticals and geography?</p>
+<p>This is one of the questions UI/UX Services at EMC has been answering over the last 6 months. We were tasked with designing a bullet-proof information hierarchy and navigational structure for three ongoing applications with radically different feature-sets.</p>
 
 <h2 id="guiding-principles">Guiding Principles</h2>
-<p>Over three meetings, we presented research and reviewed the types of interactions and structures most common to EMC products.</p>
-
-<p><img src="/nav-and-tools/img/raptor-site-guide.png" alt="" /></p>
-
-<p>When research concluded, three unifying principles emerged out of the dialog to guide the following solutions.</p>
+<p>Over three meetings, we presented research and reviewed the types of interactions and structures most common to EMC products. When research concluded, three unifying principles emerged out of the dialog to guide the following solutions.</p>
 
 <ul>
   <li>
@@ -68,14 +66,50 @@
   </li>
 </ul>
 
-<h2 id="solutions">Solutions</h2>
+<!-- ### Methodology
+
+<div class="wide" markdown="0">
+    <div class="grid">
+        <div>
+            <h5>Audit</h5>
+            <img src="img/method-audit.png">
+            <p>Over email and confluence, we pulled a full audit of the applications using EMC-UI.</p>
+        </div>
+        <div>
+            <h5>Feature Mapping</h5>
+            <img src="img/method-feature.png">
+            <p>Over whiteboards and Sketch, we laid out maps of each application. We circled common patterns and data structures and used those as starting points to design from.</p>
+        </div>
+
+        <div>
+            <h5>Research</h5>
+            <img src="img/method-research.png">
+            <p>Prototyping and research into context, as well as</p>
+        </div>
+
+        <div>
+            <h5>Testing</h5>
+            <img src="img/method-test.png">
+            <p>This is the text here, this is what we're talking now.</p>
+        </div>     
+    </div>   
+</div> -->
+
+<h3 id="the-results">The Results</h3>
+<p>After 6 months, we delivered the last of our framework changes to EMC-UI.</p>
+
+<div class="stretch">
+    <img alt="The Finished Product" src="img/old-and-new.svg" />
+</div>
 
 <h3 id="omni-nav">Omni-Nav</h3>
 <p>We settled on an Omni-Navigational window, build out with each mini-application inside the main pain, as well as system Utilities.</p>
 
+<p class="center"><img src="img/omni-menu.gif" alt="&quot;Omni-Nav&quot;" /></p>
+
 <p>The omni-search at the top works from an index of the entire site; you can access pages 2 or 3 levels deep within that single page, as well as Tags and Events thrown by the Application itself.</p>
 
-<p><strong>Detail Shot</strong> We spent an extra hour and a half adding hotkeys  for opening, searching and traversing the omni-panel. We had a lot of fun adding in these little details for the power user personas.</p>
+<p><strong>Details</strong> We spent an extra hour and a half adding hotkeys  for opening, searching and traversing the omni-panel. We had a lot of fun adding in these little details for the power user personas.</p>
 
 <h3 id="secondary-nav">Secondary Nav</h3>
 <p>The secondary navigation was actually the last piece of the puzzle we committed to. We iterated through 4 different approaches before we landed the final solution. The prototype below, coded by <a href="codepen.com/jasesmith">Jase Smith</a>was one of the tests we threw against the solution.</p>
@@ -91,6 +125,14 @@
 <!-- {: .wide }
 <span>Testing, this is a test, test cool.</span> <span> Testing 2.</span>
 {: .block .wide } --></p>
+
+<h2 id="results">Results</h2>
+<ul>
+  <li><em>Fewer Clicks</em> - Simple hueristic analyis of navigation and common actions saw a 25-35% reduction in task complexity.</li>
+  <li><em>Coherent IA</em> - The userflow maps we created before were rats nests. These were saner, and have already erased the difficult navigational decisions we’ve had to make.</li>
+  <li><em>Better Tests</em> - We approached an outside UX Research org to operate separately to keep us honest through the developement. Separate UX Researchers confirmed our test results with vastly improved usability KPIs.</li>
+  <li><em>Proliferation</em> - This work combined with higher inter-org outreach saw an increase from</li>
+</ul>
 
             </div>
 
