@@ -12,7 +12,7 @@ So why do you have such a dumb, goofy grin?
 {: .q }
 Oh, we threw a hackathon and it was stellar. Seriously, one of the biggest successes in my career to date, probably.
 
-But a Hackathon? That’s a little played, isn’t it?
+But a hackathon? That’s a little played, isn’t it?
 {: .q }
 Probably. But a lot of the people we worked with had never attended one, or had even worked at a start-up. We were transitioning over to agile and new web frameworks and the old CYOA waterfall methods just weren’t only not-helpful; they were, in some cases, actively undermining our attempts to efficiently push quality software to market.
 
@@ -41,7 +41,7 @@ That would’ve been easier, but  not so effective. No, we started with pitching
 </div>
 
 ### Posters
-Attendance was a concern. EMC had never thrown a Hackathon before (at least at our site) and attendance was sanctioned but 100% optional. We started by commandeering the monitors peppered throughout the site to tease the date (a slight mistake; the date was move 5 times because of schedule slippage elsewhere). A few weeks later I designed, printed and posted the office with posters.
+Attendance was a concern. EMC had never thrown a hackathon before (at least at our site) and attendance was sanctioned but 100% optional. We started by commandeering the monitors peppered throughout the site to tease the date (a slight mistake; the date was move 5 times because of schedule slippage elsewhere). A few weeks later I designed, printed and posted the office with posters.
 
 !["Zine-esque posters we spread throughout the office"](img/posters.jpg)
 
@@ -80,11 +80,11 @@ So once we identified three APIs (one internal, one external, one we created our
 
 We threw them up on Github and organized the teams with experienced leaders and less experienced team-mates so mentor/mentee relationships emerged organically. **The hackathon's success we think probably hinged on this decision.**
 
-The organizers of the Hackathon (me and four amazing coworkers) acted as the event’s floaters to unstick teams before they got too buried in technical problems.
+The organizers of the hackathon (me and four amazing coworkers) acted as the event’s floaters to unstick teams before they got too buried in technical problems.
 
 So what did you learn?
 {: .q }
-The Hackathon was Monday and Tuesday, so probably the best thing we did was schedule a long lunch Friday for sign-up and environment set-up. A large number of attendees had never used tools like Atom or Github even, much less NPM, so this cut down on any unexpected problems that would’ve _killed_ momentum.
+The hackathon was Monday and Tuesday, so probably the best thing we did was schedule a long lunch Friday for sign-up and environment set-up. A large number of attendees had never used tools like Atom or Github even, much less NPM, so this cut down on any unexpected problems that would’ve _killed_ momentum.
 
 What could’ve gone better?
 {: .q }
@@ -98,7 +98,7 @@ The excitement people had just getting set up on Atom and Github was more than I
 
 And Management thought it was worthwhile?
 {: .q }
-Absolutely. 50 people had new working relationships with coworkers completely outside of their organization. This was the first step of a site-wide knowledge share that we had been trying to get to for months previous to that. The Directors and VPs asked us to travel to other EMC offices across the country and repeat the Hackathon for other sites.
+Absolutely. 50 people had new working relationships with coworkers completely outside of their organization. This was the first step of a site-wide knowledge share that we had been trying to get to for months previous to that. The Directors and VPs asked us to travel to other EMC offices across the country and repeat the hackathon for other sites.
 
 Hence the big, goofy grin. 😀
 
