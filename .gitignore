@@ -3,3 +3,7 @@ config.codekit
 .editorconfig
 .sass-cache/
 *.css.map
+
+*.codekit
+
+config.codekit
