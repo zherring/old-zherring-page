@@ -3,7 +3,7 @@ layout: page
 title: Navigation & Tools
 project: Navigation & Tools
 aside: Elastic patterns for a plethora of edge cases
-img: /img/multi-select.gif
+img: img/multi-select.gif
 class: nav-tool shadow
 type: project
 ---
@@ -81,9 +81,16 @@ The secondary navigation was actually the last piece of the puzzle we committed 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
-### Action Bar
+<!-- ### Action Bar
+!["Omni-Nav"](img/omni-menu.gif)
+{: .center } -->
 
-For actions, which could be taken on individual items, components within an item, or on multiple-items at once, we assembled a
+### App Utilities
+Rounding out the approach were the utilities attached to each view, Multi-Select Actions, Notifications and site-wide Searching.
+
+!["Multi-Select"](img/multi-select.gif) !["Notification Center"](img/nc.gif) !["Omni-Search"](img/o-s.gif)
+{: .wide .tile-3 }
+
 <!-- {: .wide }
 <span>Testing, this is a test, test cool.</span> <span> Testing 2.</span>
 {: .block .wide } -->

@@ -461,6 +461,13 @@ pre {
 .flex {
   display: flex; }
 
+.align-top {
+  justify-content: space-between;
+  align-items: top; }
+
+.f-grow-1 {
+  flex-grow: 1; }
+
 .f-col {
   flex-direction: column; }
 
@@ -511,6 +518,9 @@ body {
   color: #585858;
   line-height: 1.5em; }
 
+_:-webkit-full-screen:not(:root:root), #container.safari_only {
+  max-width: 80rem; }
+
 h1 {
   font-family: "Roboto Slab", san-serif; }
 
@@ -538,7 +548,8 @@ h1, h2, h3, h4, h5 {
     background-position: center center;
     background-size: contain; }
     #bio span.me {
-      background-image: url("/img/emoji-me.png"); }
+      background-image: url("/img/emoji-me.png");
+      margin-left: -.25em; }
     #bio span.boulder {
       background-image: url("/img/emoji-boulder.svg");
       color: FF3D00; }
@@ -549,6 +560,8 @@ h1, h2, h3, h4, h5 {
       background-image: url("/img/emoji-code.svg");
       color: FF3D00; }
   #bio strong.me {
+    color: #2dbae8; }
+  #bio strong.product {
     color: #FF3d00; }
   #bio strong.boulder {
     color: #72CAAA; }
@@ -556,10 +569,14 @@ h1, h2, h3, h4, h5 {
     color: #FACF53; }
   #bio strong.code {
     color: #9253FA; }
+  #bio strong.rad {
+    color: red;
+    transition: color ease-in-out;
+    animation: rad .25s infinite; }
   #bio p {
     color: #858585;
     font-weight: lighter;
-    font-size: 1.8rem;
+    font-size: 1.6em;
     text-align: center; }
   #bio > * {
     width: 100%; }
@@ -610,6 +627,8 @@ article:first-child, .grid a {
   box-sizing: border-box;
   flex-grow: 1;
   justify-content: center; }
+  article:first-child img, .grid a img {
+    width: 60%; }
 
 .post {
   text-align: left; }
@@ -653,6 +672,48 @@ article:first-child, .grid a {
   .talk svg {
     margin-bottom: -.1em; }
 
+@keyframes rad {
+  0% {
+    color: red; }
+  15% {
+    color: yellow; }
+  30% {
+    color: lime; }
+  50% {
+    color: cyan; }
+  65% {
+    color: blue; }
+  80% {
+    color: magenta; }
+  100% {
+    color: red; } }
+@media screen and (max-width: 940px) {
+  body {
+    font-size: 14px; } }
+@media screen and (max-width: 940px) {
+  body {
+    font-size: 12px; } }
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 4vw; }
+
+  .grid, #container {
+    display: normal; }
+
+  #bio, article, .grid a {
+    max-width: 100%;
+    width: 100%;
+    height: 50vh; }
+    #bio br, article br, .grid a br {
+      display: none; }
+
+  .post-content {
+    padding: 1rem;
+    box-sizing: border-box; } }
+.q {
+  font-style: italic;
+  font-weight: bold; }
+
 #back-arr {
   position: fixed;
   left: 1rem;
@@ -676,33 +737,56 @@ article:first-child, .grid a {
   .splash:hover {
     text-decoration: none; }
 
+.nav-tool .q, .nav-tool a {
+  color: #ffd458; }
+.nav-tool a:visited {
+  color: #FFC725; }
 .nav-tool #back-ctr {
   stroke: #ff9425; }
 .nav-tool.splash, .nav-tool .splash {
   background: #FFC725;
   background-image: linear-gradient(171deg, #FFC725 70%, #ff9425 130%); }
   .nav-tool.splash h1, .nav-tool.splash h2, .nav-tool .splash h1, .nav-tool .splash h2 {
-    text-shadow: 0 4px 2px #f1b300; }
-  .nav-tool.splash h1, .nav-tool.splash h2, .nav-tool .splash h1, .nav-tool .splash h2 {
+    text-shadow: 0 4px 2px #f1b300;
     color: #FFF; }
   .nav-tool.splash aside, .nav-tool .splash aside {
     color: #be8d00; }
-.nav-tool.shadow .splash img {
-  box-shadow: 0 4px 4px #e7ac00; }
+  .nav-tool.splash.shadow .splash img, .nav-tool .splash.shadow .splash img {
+    box-shadow: 0 4px 4px #e7ac00; }
 
+.install .q, .install a {
+  color: #60b2e8; }
+.install a:visited {
+  color: #339CE2; }
 .install #back-ctr {
   stroke: #33c5e2; }
 .install.splash, .install .splash {
   background: #339CE2;
   background-image: linear-gradient(171deg, #339CE2 70%, #33c5e2 130%); }
   .install.splash h1, .install.splash h2, .install .splash h1, .install .splash h2 {
-    text-shadow: 0 4px 2px #1c82c6; }
-  .install.splash h1, .install.splash h2, .install .splash h1, .install .splash h2 {
+    text-shadow: 0 4px 2px #1c82c6;
     color: #FFF; }
   .install.splash aside, .install .splash aside {
     color: #166599; }
-.install.shadow .splash img {
-  box-shadow: 0 4px 4px #1b7cbd; }
+  .install.splash.shadow .splash img, .install .splash.shadow .splash img {
+    box-shadow: 0 4px 4px #1b7cbd; }
+
+.hackathon .q, .hackathon a {
+  color: #626262; }
+.hackathon a:visited {
+  color: #484848; }
+.hackathon #back-ctr {
+  stroke: #7b7b7b; }
+.hackathon.splash, .hackathon .splash {
+  background: #484848;
+  background-image: linear-gradient(171deg, #484848 70%, #484848 130%); }
+  .hackathon.splash h1, .hackathon.splash h2, .hackathon .splash h1, .hackathon .splash h2 {
+    text-shadow: 0 4px 2px #2f2f2f;
+    color: #FFF; }
+  .hackathon.splash aside, .hackathon .splash aside {
+    color: #7b7b7b; }
+  .hackathon.splash.shadow .splash img, .hackathon .splash.shadow .splash img {
+    box-shadow: 0 4px 4px #e6e6e6; }
 
 body.page {
   font-size: 18px; }
@@ -724,7 +808,8 @@ article {
     max-width: calc(60rem - 3rem);
     width: calc(100vw - 3rem); }
   .post-content img {
-    box-shadow: none; }
+    box-shadow: none;
+    max-width: 100%; }
   .post-content h1 {
     font-size: 2.6rem; }
   .post-content h2 {
@@ -763,21 +848,32 @@ section > div {
   .stretch img {
     width: 95%; }
 
-.grid {
+.post-content .grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-  .grid > div {
+  .post-content .grid > div {
     display: flex;
     flex-direction: column;
     width: 25vw;
     justify-content: space-between;
-    text-align: center;
     align-items: center;
     padding: 0 5vw;
     box-sizing: border-box; }
-    .grid > div p {
+    .post-content .grid > div p {
       font-size: .85em;
       line-height: 1.5rem; }
-    .grid > div img {
+    .post-content .grid > div img {
       max-width: 8rem; }
+.post-content div[class*="tile-"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .post-content div[class*="tile-"] > * {
+    overflow: hidden;
+    margin: 1em 0; }
+.post-content .tile-2 > * {
+  width: 45%; }
+.post-content .tile-3 > * {
+  width: 30%; }
