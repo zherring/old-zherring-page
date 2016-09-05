@@ -3,7 +3,7 @@ layout: page
 title: How to Design a Hackathon
 project: How to Design a Hackathon
 aside: Promoting Scrappiness in a Tech-Giant
-img: img/emc-hackathon-sticker.svg
+img: /img/svg/emc-hackathon-sticker.svg
 class: hackathon
 type: project
 ---

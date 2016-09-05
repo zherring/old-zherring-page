@@ -3,7 +3,7 @@ layout: page
 title: Navigation & Tools
 project: Navigation & Tools
 aside: Elastic patterns for a plethora of edge cases
-img: img/multi-select.gif
+img: /nav-and-tools/img/multi-select.gif
 class: nav-tool shadow
 type: project
 ---
