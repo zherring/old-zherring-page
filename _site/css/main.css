@@ -709,7 +709,21 @@ article:first-child, .grid a {
 
   .post-content {
     padding: 1rem;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+
+  .post-content .codepen {
+    width: 100vw;
+    height: 60vh;
+    background: #6F6F6F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .post-content .codepen:after {
+      content: "CodePen embeds are disabled on mobile.";
+      color: #FFF; }
+    .post-content .codepen > * {
+      display: none; } }
 .q {
   font-style: italic;
   font-weight: bold; }

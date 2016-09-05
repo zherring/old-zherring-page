@@ -286,4 +286,20 @@ h1, h2, h3, h4, h5 {
     }
     .post-content { padding: 1rem; box-sizing: border-box; }
 
+    .post-content .codepen {
+        width: 100vw;
+        height: 60vh;
+        background: $dark-gray;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+        content: "CodePen embeds are disabled on mobile.";
+        color: #FFF;
+
+        }
+        > * { display: none;}
+    }
 }

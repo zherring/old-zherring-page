@@ -14,11 +14,11 @@ Oh, we threw a hackathon and it was stellar. Seriously, one of the biggest succe
 
 But a Hackathon? That’s a little played, isn’t it?
 {: .q }
-Probably. But a lot of the people we worked with had never attended one, or had even worked at a start-up. We were transitioning over to agile and new web frameworks and the old CYOA waterfall methods just weren’t just not-helpful; they were in some cases actively undermining our attempts to efficiently take quality software to market.
+Probably. But a lot of the people we worked with had never attended one, or had even worked at a start-up. We were transitioning over to agile and new web frameworks and the old CYOA waterfall methods just weren’t only not-helpful; they were, in some cases, actively undermining our attempts to efficiently push quality software to market.
 
 So what did you do? Just throw a two day meeting on everyone’s calendar and call it good?
 {: .q }
-That would’ve been easier, but probably not as effective. No, we started with pitching upper management. Once they signed-off, we started filling the cracks and breathers in our regularly scheduled work with event planning and curriculum design.
+That would’ve been easier, but  not so effective. No, we started with pitching upper management. Once they signed-off, we started filling the cracks in our regular work schedule with event planning and curriculum design.
 
 ### Event Logo and Swag
 <div class="wide tile-2 align-top" markdown="0">
@@ -41,11 +41,11 @@ That would’ve been easier, but probably not as effective. No, we started with 
 </div>
 
 ### Posters
-Attendance was a concern. EMC had never thrown a Hackathon before (at least at our site) and attendance was sanctioned but 100% optional. We started by comandeering the monitor to show subtle teases about the date (a mistake; the date was move 5 times because of schedule slippage) and I designed, printed and plasted the office with these posters.
+Attendance was a concern. EMC had never thrown a Hackathon before (at least at our site) and attendance was sanctioned but 100% optional. We started by commandeering the monitors peppered throughout the site to tease the date (a slight mistake; the date was move 5 times because of schedule slippage elsewhere). A few weeks later I designed, printed and posted the office with posters.
 
 !["Zine-esque posters we spread throughout the office"](img/posters.jpg)
 
-The guerilla marketing paid off and we had over 60% of the site signed up for two days of hacking. This included departments other than engineering like QA and management; we had a significant variety of coding experienced, which is when the Bird-House Concept became really important.
+The guerilla marketing and email blasts paid off; we had over 60% of the site signed up for two days of hacking. This included departments other than engineering like QA and management; we had a significant variety of coding experienced, which is when the Birdhouse Concept became really important.
 
 Birdhouse?
 {: .q }
@@ -78,7 +78,7 @@ So once we identified three APIs (one internal, one external, one we created our
     </div>
 </div>
 
-We threw them up on Github and organized the teams with experienced leaders and less experienced team-mates so mentor/mentee relationships emerged organically. **The ultimate success probably hinged on this decision.**
+We threw them up on Github and organized the teams with experienced leaders and less experienced team-mates so mentor/mentee relationships emerged organically. **The hackathon's success we think probably hinged on this decision.**
 
 The organizers of the Hackathon (me and four amazing coworkers) acted as the event’s floaters to unstick teams before they got too buried in technical problems.
 
@@ -92,17 +92,17 @@ The majority of the people who signed up were most familiar with backend and lea
 
 What went great?
 {: .q }
-We were taken by surprise by the creative energy people attacked their projects with. Everyone was ambitious, despite (or maybe because) some of the greener members, and _everyone_ delivered something finished and working.
+We were taken by surprise by everyone's ambition. Despite (or maybe because) some of the greener members, _everyone_ delivered something finished and amazing.
 
-The excitement people had just getting set up on Atom and Github . People came out of that energized and with new connections across departments. Communication was improved and we broke the sound-barrier in a way; every single team delivered something _finished_ after just two days of hacking. The inevitability of our calcified, plodding process was disproven 9 times over those two days.
+The excitement people had just getting set up on Atom and Github was more than I'd personally seen in any meeting I'd attended in the two years I'd worked at EMC. People emerged pumped with new skills and connections across departments. Communication was improved and we broke the sound-barrier figuratively speaking; every single team delivered something _finished_ after just two days of hacking. The plodding, calcified pace a giant organization we'd grown accustomed to didn't seem so inevitable anymore. We had 9 separate experiments with different experiments, teams, personalities and problems that proved otherwise.
 
 And Management thought it was worthwhile?
 {: .q }
-Absolutely. 50 people had new working relationships with coworkers completely outside of their organization. These steps started undoing the work silos that hurt our efforts so much the twelve months previously. The Directors and VPs took notice too; they asked us to travel to other EMC offices across the country and repeat the Hackathon program born in Louisville CO.
+Absolutely. 50 people had new working relationships with coworkers completely outside of their organization. This was the first step of a site-wide knowledge share that we had been trying to get to for months previous to that. The Directors and VPs asked us to travel to other EMC offices across the country and repeat the Hackathon for other sites.
 
 Hence the big, goofy grin. 😀
 
-Sounds like you guys had a blast. Got any pictures?
+Sounds like you guys had a blast! Got any pictures?
 {: .q }
 Oh, absolutely.
 
